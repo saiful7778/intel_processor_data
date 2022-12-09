@@ -8,7 +8,6 @@ const {getProductList, mainSeriesName} = require("./getProductList");
 const getSingleProductData = require("./getSingleProductData");
 const saveToJson =require("./savingSystem");
 
-
 // the main website url
 const mainUrl = "https://www.intel.com/content/www/us/en/products/details/processors.html";
 
