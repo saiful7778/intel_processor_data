@@ -1,0 +1,1 @@
+const path=require("path"),fs=require("fs"),{Parser:o}=require("json2csv"),csvPath=path.join(__dirname,"data\\csvData.csv");function convertJsonToCsv(t){try{let s=new o(t),n=s.parse(t);fs.appendFileSync(csvPath,n,"utf-8",o=>{o?console.log(o):console.log("Converted file json to CSV")}),console.log(n)}catch(a){console.error(a)}}module.exports=convertJsonToCsv;
